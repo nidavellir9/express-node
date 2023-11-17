@@ -1,3 +1,3 @@
-module.exports = (request, response, next) => {
-    response.status(404).end()
-  }
+module.exports = (request, response) => {
+	response.status(404).end()
+}
