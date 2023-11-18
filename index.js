@@ -2,13 +2,16 @@ require('dotenv').config()
 require('./mongo')
 
 const express = require('express')
-const app = express()
+const cors = require('cors')
+
 const Note = require('./models/Note')
 const notFound = require('./middleware/notFound')
 const handleErrors = require('./middleware/handleErrors')
 const logger = require('./loggerMiddleware')
+const app = express()
 //const http = require('http')
 
+app.use(cors())
 app.use(express.json())
 app.use(logger)
 
