@@ -13,6 +13,11 @@ const initialNotes = [
 		content: 'Sigueme',
 		important: true,
 		date: new Date()
+	},
+	{
+		content: 'Tercera nota',
+		important: false,
+		date: new Date()
 	}
 ]
 

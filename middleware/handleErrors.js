@@ -1,4 +1,4 @@
-module.exports = (error, request, response) => {
+module.exports = (error, request, response, next) => {
 	//console.error(error)
   
 	if (error.name === 'CastError') {
