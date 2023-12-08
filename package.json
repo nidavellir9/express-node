@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint .",
     "dev": "NODE_ENV=development nodemon index.js",
-    "test": "NODE_ENV=test PORT=1234 jest --verbose tests/user.test.js",
+    "test": "NODE_ENV=test PORT=1234 jest --verbose",
     "test:watch": "npm run test -- --watch",
     "start": "NODE_ENV=production node index.js"
   },

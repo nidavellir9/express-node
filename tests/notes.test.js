@@ -43,7 +43,8 @@ describe('Create a note', () => {
 	test('Is possible with a valid note', async () => {
 		const newNote = {
 			content: 'Proxima nota',
-			important: true
+			important: true,
+			userId: '65733091f738d868d5e2b966'
 		}
 	
 		await api
@@ -60,7 +61,8 @@ describe('Create a note', () => {
 	
 	test('Is not possible with an invalid note', async () => {
 		const newNote = {
-			important: true
+			important: true,
+			userId: '65733091f738d868d5e2b966'
 		}
 	
 		await api
