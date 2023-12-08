@@ -6,8 +6,11 @@ const cors = require('cors')
 
 const notFound = require('./middleware/notFound')
 const handleErrors = require('./middleware/handleErrors')
+
+const loginRouter = require('./controllers/login')
 const noteRouter = require('./controllers/notes')
 const userRouter = require('./controllers/users')
+
 //const logger = require('./loggerMiddleware')
 const app = express()
 //const http = require('http')
@@ -25,6 +28,7 @@ app.get('/', (request, response) => {
 	response.send('<h1>Hello Wordld!</h1>')
 })
 
+app.use('/api/login', loginRouter)
 app.use('/api/notes', noteRouter)
 app.use('/api/users', userRouter)
 
